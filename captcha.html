@@ -1,0 +1,78 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <h1 style="text-align:center;color:dodgerblue;" >Validación Captcha Google</h1>
+        <br />
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-3">
+                <input type="text" id="txtMensaje" runat="server" class="form-control" />
+            </div>
+            <div class="col-sm-3">
+                <div class="g-recaptcha" data-sitekey="6LdxS-YUAAAAAD5SAxfU12OVCyxvNEyuKaMoJqVh"></div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-3">
+                <asp:Button ID="btnEnviar" runat="server" CssClass="btn btn-success" Text="Enviar Mensaje A BD" OnClick="btnEnviar_Click" />
+            </div>
+        </div>
+    </form>
+</body>
+</html>
+
+
+
+Web.config:
+
+<appSettings>
+ <add key="SecretKey" value=""/>
+</appSettings>
+
+Default.cs:
+
+
+//Método para validar Captcha
+public bool IsReCaptchValid()
+        {
+            var result = false;
+            var captchaResponse = Request.Form["g-recaptcha-response"];
+            var secretKey = ConfigurationManager.AppSettings["SecretKey"];
+            var apiUrl = "https://www.google.com/recaptcha/api/siteverify?secret={0}&response={1}";
+            var requestUri = string.Format(apiUrl, secretKey, captchaResponse);
+            var request = (HttpWebRequest)WebRequest.Create(requestUri);
+
+            using (WebResponse response = request.GetResponse())
+            {
+                using (StreamReader stream = new StreamReader(response.GetResponseStream()))
+                {
+                    JObject jResponse = JObject.Parse(stream.ReadToEnd());
+                    var isSuccess = jResponse.Value<bool>("success");
+                    result = (isSuccess) ? true : false;
+                }
+            }
+            return result;
+        }
+
+//Evento Enviar Datos
+ if (IsReCaptchValid())
+            {
+                string messageToDB = txtMensaje.Value;
+            }
+            else
+            {
+                ScriptManager.RegisterClientScriptBlock(this, typeof(string), 
+                    "MsgAlert", "alert('Validación Captcha incorrecta');window.location ='Default.aspx';", true);
+            }
+

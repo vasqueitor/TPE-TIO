@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sé miembro</title>
+    <link rel="stylesheet" href="estilocafe.css">
+</head>
+<body>
+    <ul class="navigation">
+        <li class="resaltar"><a class="link" href="Inic.html">Home</a></li> 
+        <li class="resaltar"><a class="link" href="Productos.html">Productos</a></li>
+        <li class="resaltar"><a class="link" href="Sucursales.html">Sucursales</a></li>
+        <li class="resaltar"><a class="link" href="Contacto.html">Contacto</a></li>
+        <li>Sé miembro</li>
+    </ul>
+    <div class="padre">
+        <div class="cuerpo">
+            <h1>¿Tenés ganas de formar parte del mejor equipo cafetero?</h1>
+            <h2>Estamos en búsqueda de:</h2>
+                <ul id="lista_cuadr">
+                    <li>Barista</li>
+                    <li>Camareros</li>
+                    <li>Ayudante de cocina</li>
+                </ul>
+                <h2>Si crees tener lo necesario para tomar tu puesto en nuestra empresa dejanos tus datos a continuación</h2>
+         </div>
+        <form>
+                    <div>
+                        <input type="text" id="cv_name" name="nombre" value="" placeholder="Tu Nombre"/>
+                        <input type="text" id="cv_name" name="mail" value="" placeholder="Tu Correo Electrónico"/>
+                    </div>
+                    
+                    <div>¿A qué puesto te estás postulando?</div>  
+                                       <div class="puesto"><input type="radio" name="puesto" value="Barista"/> Barista</div>
+                                       <div class="puesto"><input type="radio" name="puesto" value="Ayudante de cocina"/> Ayudante de cocina</div>
+                                        <div class="puesto"><input type="radio" name="puesto" value="Camarero"/> Camarero</div>
+                    <div>A continuación marcá las aptitudes que posees de la lista</div>  
+                        <div>
+                                        <input type="checkbox" name="aptitud" value="Disponibilidad horaria parcial"/> Disponibilidad horaria parcial
+                                        <input type="checkbox" name="aptitud" value="Disponibilidad horaria completa"/> Disponibilidad horaria completa
+                                        <input type="checkbox" name="aptitud" value="Curso manipulación de alimentos"/> Curso manipulación de alimentos
+                        </div>
+                        <div>
+                                        <input type="checkbox" name="aptitud" value="Capacitación certificada en Barista"/> Capacitación certificada en Barista
+                                        <input type="checkbox" name="aptitud" value="Experiencia comprobable en cafetería"/> Experiencia previa en cafetería
+                                        <input type="checkbox" name="aptitud" value="Experiencia comprobable en cocina"/> Experiencia previa en cocina
+                        </div>            
+
+                    <div><h2> Ahora te pedimos nos cuentes por qué querés trabajar con nosotros</h2></div>
+                    <div><textarea name="Comentario" rows="10" cols="150" placeholder="Cuéntanos"></textarea></div>
+                            <div class="captcha"><p>No te ofendas pero tenés bastante cara de robot ¿Te animas a demostrar que no es así?</p>
+                                    ¿Qué números ves a continuación?
+                                    <p id="numeroRandom"></p>
+                                    <input id="captcha" type="number" value="" placeholder="Su respuesta">
+                                    <button id="btn">Obvio que no soy robot</button>
+                                    <p id="resultado"></p>
+                            </div>
+                    <script src="captcha.js"></script>
+                    
+                    <div><input id="submit" type="hidden" value="Enviar Postulación"></div>
+                </form>
+    </div>
+</body>
+</html>
