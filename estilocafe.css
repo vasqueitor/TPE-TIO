@@ -1,5 +1,5 @@
 
-.navigation {
+nav {
     list-style: none;
     display: flex;
     background: rgba(21, 0, 255, 0.587);
@@ -12,11 +12,11 @@
     text-decoration: none;
   }
 
-.resaltar {
+.nav {
     text-decoration: none;
   }
 
-  .resaltar:hover {
+  .nav:hover {
     background: rgb(11, 112, 19);
   }
  
