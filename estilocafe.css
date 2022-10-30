@@ -4,7 +4,9 @@ body {
 }
 nav {
     list-style: none;
+    height: 40px;
     display: flex;
+    align-items: center;
     background: rgba(21, 0, 255, 0.587);
     border-bottom: 5px solid rgb(82, 62, 1);
     justify-content: space-around ;
