@@ -34,11 +34,6 @@ body {
       margin-bottom: 50px;
   }
 
-.contacto{
-    background-image: url(contacto.jpg);
-    background-repeat: no-repeat;
-}
-
 #sucursales{
     height: 60px;
     border-radius: 100px;
