@@ -6,6 +6,14 @@ main{
   background-color: #fafafa;
 }
 
+.padre{
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: space-between;
+}
+
 .link{
     text-decoration: none;
   }

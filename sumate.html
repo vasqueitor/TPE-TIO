@@ -9,82 +9,87 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-dark bg-dark">
-          <a class="nav-link active fs-4" aria-current="page" href="index.html">Home</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link fs-4" href="index.html">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link fs-4" href="productos.html">Productos <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link fs-4" href="sucursales.html">Sucursales</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link fs-4" href="contacto.html">Contacto</a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link fs-4">Sé miembro</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </header>
+  <header>
+    <nav class="navbar navbar-dark bg-dark">
+      <a class="nav-link active fs-4" aria-current="page" href="index.html">Home</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link fs-4" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-4" href="productos.html">Productos <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-4" href="sucursales.html">Sucursales</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-4" href="contacto.html">Contacto</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link fs-4">Sé miembro</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
     <div class="padre">
-        <div class="cuerpo">
-            <h1>¿Tenés ganas de formar parte del mejor equipo cafetero?</h1>
-            <h2>Estamos en búsqueda de:</h2>
-                <ul id="lista_cuadr">
-                    <li>Barista</li>
-                    <li>Camareros</li>
-                    <li>Ayudante de cocina</li>
-                </ul>
-                <h2>Si crees tener lo necesario para tomar tu puesto en nuestra empresa dejanos tus datos a continuación</h2>
-         </div>
-        <form>
-                    <div>
-                        <input type="text" id="cv_name" name="nombre" value="" placeholder="Tu Nombre"/>
-                        <input type="text" id="cv_name" name="mail" value="" placeholder="Tu Correo Electrónico"/>
-                    </div>
+      <div class="cuerpo">
+        <h1>¿Tenés ganas de formar parte del mejor equipo cafetero?</h1>
+        <h2>Estamos en búsqueda de:</h2>
+        <ul id="lista_cuadr">
+          <li>Barista</li>
+          <li>Camareros</li>
+          <li>Ayudante de cocina</li>
+        </ul>
+        <h2>Si crees tener lo necesario para tomar tu puesto en nuestra empresa dejanos tus datos a continuación</h2>
+      </div>
+      <form>
+        <div>
+          <input type="text" id="cv_name" name="nombre" value="" placeholder="Tu Nombre"/>
+          <input type="text" id="cv_name" name="mail" value="" placeholder="Tu Correo Electrónico"/>
+        </div>
                     
-                    <div>¿A qué puesto te estás postulando?</div>  
-                                       <div class="puesto"><input type="radio" name="puesto" value="Barista"/> Barista</div>
-                                       <div class="puesto"><input type="radio" name="puesto" value="Ayudante de cocina"/> Ayudante de cocina</div>
-                                        <div class="puesto"><input type="radio" name="puesto" value="Camarero"/> Camarero</div>
-                    <div>A continuación marcá las aptitudes que posees de la lista</div>  
-                        <div>
-                                        <input type="checkbox" name="aptitud" value="Disponibilidad horaria parcial"/> Disponibilidad horaria parcial
-                                        <input type="checkbox" name="aptitud" value="Disponibilidad horaria completa"/> Disponibilidad horaria completa
-                                        <input type="checkbox" name="aptitud" value="Curso manipulación de alimentos"/> Curso manipulación de alimentos
-                        </div>
-                        <div>
-                                        <input type="checkbox" name="aptitud" value="Capacitación certificada en Barista"/> Capacitación certificada en Barista
-                                        <input type="checkbox" name="aptitud" value="Experiencia comprobable en cafetería"/> Experiencia previa en cafetería
-                                        <input type="checkbox" name="aptitud" value="Experiencia comprobable en cocina"/> Experiencia previa en cocina
-                        </div>            
-
-                    <div><h2> Ahora te pedimos nos cuentes por qué querés trabajar con nosotros</h2></div>
-                    <div><textarea name="Comentario" rows="10" cols="150" placeholder="Cuéntanos"></textarea></div>
-                            <div class="captcha"><p>No te ofendas pero tenés bastante cara de robot ¿Te animas a demostrar que no es así?</p>
-                                    ¿Qué números ves a continuación?
-                                    <p id="numeroRandom"></p>
-                                    <input id="captcha" type="number" value="" placeholder="Su respuesta">
-                                    <button id="btn">Obvio que no soy robot</button>
-                                    <p id="resultado"></p>
-                            </div>
-                    <script src="captcha.js"></script>
-                    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <div>¿A qué puesto te estás postulando?</div>  
+        <div class="puesto"><input type="radio" name="puesto" value="Barista"/> Barista</div>
+        <div class="puesto"><input type="radio" name="puesto" value="Ayudante de cocina"/> Ayudante de cocina</div>
+        <div class="puesto"><input type="radio" name="puesto" value="Camarero"/> Camarero</div>
+        <div>A continuación marcá las aptitudes que posees de la lista</div>  
+        <div>
+          <input type="checkbox" name="aptitud" value="Disponibilidad horaria parcial"/> Disponibilidad horaria parcial
+          <input type="checkbox" name="aptitud" value="Disponibilidad horaria completa"/> Disponibilidad horaria completa
+          <input type="checkbox" name="aptitud" value="Curso manipulación de alimentos"/> Curso manipulación de alimentos
+        </div>
+        <div>
+          <input type="checkbox" name="aptitud" value="Capacitación certificada en Barista"/> Capacitación certificada en Barista
+          <input type="checkbox" name="aptitud" value="Experiencia comprobable en cafetería"/> Experiencia previa en cafetería
+          <input type="checkbox" name="aptitud" value="Experiencia comprobable en cocina"/> Experiencia previa en cocina
+        </div>            
+        <div>
+          <h2> Ahora te pedimos nos cuentes por qué querés trabajar con nosotros</h2>
+        </div>
+        <div>
+          <textarea name="Comentario" rows="10" cols="150" placeholder="Cuéntanos"></textarea>
+        </div>
+        <div class="captcha">
+          <p>No te ofendas pero tenés bastante cara de robot ¿Te animas a demostrar que no es así?</p>
+            ¿Qué números ves a continuación?
+          <p id="numeroRandom"></p>
+          <input id="captcha" type="number" value="" placeholder="Su respuesta">
+          <button id="btn">Obvio que no soy robot</button>
+          <p id="resultado"></p>
+        </div>      
+        <div><input id="submit" type="hidden" value="Enviar Postulación"></div>
+      </form>
+    </div>
+  </main>
+  <script src="js/captcha.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-                    
-                    <div><input id="submit" type="hidden" value="Enviar Postulación"></div>
-                </form>
-    </div>
 </body>
 </html>
