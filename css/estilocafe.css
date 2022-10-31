@@ -90,16 +90,3 @@ body {
 .container-sucursales {
   max-width: 1200px;
 }
-
-.image-sucursales {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.container-logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
