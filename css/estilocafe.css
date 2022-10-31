@@ -2,16 +2,7 @@ body {
   padding: 0;
   margin: 0;
 }
-nav {
-    list-style: none;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    background: rgba(21, 0, 255, 0.587);
-    border-bottom: 5px solid rgb(82, 62, 1);
-    justify-content: space-around ;
-    font-size: larger;
-}
+
 
 .link{
     text-decoration: none;
@@ -101,6 +92,12 @@ nav {
 }
 
 .image-sucursales {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-logo {
   display: flex;
   justify-content: center;
   align-items: center;
