@@ -2,7 +2,17 @@ body {
   padding: 0;
   margin: 0;
 }
+main{
+  background-color: #fafafa;
+}
 
+.padre{
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: space-between;
+}
 
 .link{
     text-decoration: none;
@@ -33,11 +43,6 @@ body {
       width:100%;
       margin-bottom: 50px;
   }
-
-.contacto{
-    background-image: url(contacto.jpg);
-    background-repeat: no-repeat;
-}
 
 #sucursales{
     height: 60px;
@@ -89,4 +94,20 @@ body {
 
 .container-sucursales {
   max-width: 1200px;
+}
+
+.cards{
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 5px;
+}
+
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 20px;
+  background-color: rgb(34, 33, 33);
+  color: white;
+  align-items: baseline;
 }
