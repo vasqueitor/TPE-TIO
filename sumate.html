@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sé miembro</title>
+    <title>Se Miembro</title>
     <link rel="stylesheet" href="css/estilocafe.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
@@ -37,6 +37,7 @@
     </nav>
   </header>
   <main>
+    
     <div class="padre">
       <div class="cuerpo">
         <h1>¿Tenés ganas de formar parte del mejor equipo cafetero?</h1>
@@ -48,6 +49,9 @@
         </ul>
         <h2>Si crees tener lo necesario para tomar tu puesto en nuestra empresa dejanos tus datos a continuación</h2>
       </div>
+    
+      <article> 
+        <section> 
       <form>
         <div>
           <input type="text" id="cv_name" name="nombre" value="" placeholder="Tu Nombre"/>
@@ -77,7 +81,7 @@
         </div>
         <div class="captcha">
           <p>No te ofendas pero tenés bastante cara de robot ¿Te animas a demostrar que no es así?</p>
-            ¿Qué números ves a continuación?
+          ¿Qué números ves a continuación?
           <p id="numeroRandom"></p>
           <input id="captcha" type="number" value="" placeholder="Su respuesta">
           <button id="btn">Obvio que no soy robot</button>
@@ -85,6 +89,8 @@
         </div>      
         <div><input id="submit" type="hidden" value="Enviar Postulación"></div>
       </form>
+    </section>
+    </article>
     </div>
   </main>
   <script src="js/captcha.js"></script>
