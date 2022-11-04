@@ -43,9 +43,21 @@ main{
       width:100%;
       margin-bottom: 50px;
   }
+  .titulosucursales{
+    border: solid 2px rgb(213, 213, 213);
+    
+  }
+  .titulo2sucursales{
+    text-align: center;
+    
+  }
+  .visita{
+    text-align: center;
+  }
 
 #sucursales{
-    height: 60px;
+    height: 380px;
+    width: 380px;
     border-radius: 100px;
     border-style: solid;
     border-width: 10px;
@@ -94,6 +106,7 @@ main{
 
 .container-sucursales {
   max-width: 1200px;
+  border: solid 1px rgb(82, 82, 82);
 }
 
 .cards{

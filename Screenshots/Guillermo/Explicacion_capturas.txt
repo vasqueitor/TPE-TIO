@@ -1,0 +1,13 @@
+pull_1.png : hago el primer pull para empezar a trabajar.
+
+push: siempre que hago un push a la rama remota "desarrollo", creo una rama local llamada "desarrolo", para pushear desde esa rama local. Siempre antes de hacer el push, hago un pull para verificar si hay una nueva actualizacion del repositorio.
+
+amend.png : Cambio el mensaje del commit, porque el mensaje que puse en la captura "add_commit_que_secambiaramensaje" no explicaba muy bien el archivo que se agrego en ese momento.
+
+creacion_ramalocal.png : se crea la rama para trabajar ahi los estilos del nav, en la pestaña sucursales.
+
+Archivo_sacado_del_area_de_preparacion.png: Saco la imagen del area de preparacion porque no tiene sentido que el agregado de la imagen y la modificacion en sucursales html tengan el mismo mensaje de commit.
+
+commit_quesehara_reset: aca esta el commit que se le hara reset. Se le hara reset porque se elimino un archivo incorrecto. El reset esta en Reset.png y la eliminacion correcta esta en Eliminar_archivo.png
+
+
