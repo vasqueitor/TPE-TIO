@@ -1,0 +1,7 @@
+-inicio repositorio:Se clona el repositorio a traves del comando git clone para comenzar a efecturar los cambios debidos.
+-Pull:Se traen los cambios efectuados por compañeros.
+-Commit:Se hace secuencia de add,commit y push para subir los cambios al repositorio remoto.
+-Branch Local:Se crea una branch local para poder trabajar de manera alterna a la rama desarrollo,luego se comprueba su funcionamiento y se mergea con desarrollo para luego ser eliminada.
+-Git ammend:Se cambia el mensaje de un commit ya que este le faltaban especificaciones en el mensaje de lo que se habia trabajado.
+-Git reset(preparacion):Se sacan cambios del area de preparacion que generaban errores.
+-Git reset --hard(confirmacion):Se retira un cambio del area de confirmacion que generaba.
