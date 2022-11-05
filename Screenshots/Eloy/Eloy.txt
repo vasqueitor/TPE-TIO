@@ -1,5 +1,0 @@
-informe sobre trabajo individual : primero inicie un repositorio y luego clone el repo remoto, a posterior creo la rama local desarrollo donde voy a trabajar, 
-lo siguiente que hice fue hacer un pull para traerme los cambios y seguido romper algo de la pagina y confirmarlo para luego hacer el revert y arreglarlo.
-Despues hago otro pull por los cambios de mi compañeros y prosigo hacer la segunda tarea que consistia en modificar la semantica de la pestaña miembros acto seguido hice el segundo commit,
-para terminar vuelvo hacer un pull me traigo los cambios y efectuo la ultima tarea que era añadir contenido a la pestaña sucursales efectuando asi mi ultimo commit y mi push final.
-Como ultimo hago un commit con un mesaje incompleto a proposito y despues efectuo el comando amend para modificar el mensaje, despues hago el merge de la rama en la que trabaje a la rama main local y elimino la otra.
